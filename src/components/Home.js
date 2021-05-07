@@ -45,72 +45,12 @@ const Home = () => {
         </div>
         <div className="main-container-projects" ref={projectsRef}>
           <Projects handleTechnologyClick={handleTechnologyClick} />
-          {/* <div className="scroll-to-technology-container">
-            <button
-              onClick={handleTechnologyClick}
-              style={{
-                cursor: "pointer",
-                padding: "0",
-                border: "none",
-                background: "none",
-              }}
-            >
-              <img
-                src={downBtn}
-                alt="down arrow"
-                style={{
-                  width: "40px",
-                  height: "40px",
-                }}
-              />
-            </button>
-          </div> */}
         </div>
         <div className="main-container-technology" ref={technologyRef}>
           <Technology handleContactsClick={handleContactsClick} />
-          {/* <div className="scroll-to-contacts-container">
-            <button
-              onClick={handleContactsClick}
-              style={{
-                cursor: "pointer",
-                padding: "0",
-                border: "none",
-                background: "none",
-              }}
-            >
-              <img
-                src={downBtn}
-                alt="down arrow"
-                style={{
-                  width: "40px",
-                  height: "40px",
-                }}
-              />
-            </button>
-          </div> */}
         </div>
         <div className="main-container-contacts" ref={contactsRef}>
           <Contacts handleHomeClick={handleHomeClick} />
-          {/* <div className="scroll-to-btn-container">
-            <button
-              onClick={handleHomeClick}
-              style={{
-                cursor: "pointer",
-                padding: "0",
-                border: "none",
-                background: "none",
-              }}
-            >
-              <img
-                src={upBtn}
-                alt="down arrow"
-                style={{
-                  width: "40px",
-                  height: "40px",
-                }}
-              />
-            </button>
-          </div> */}
         </div>
       </div>
     </>
