@@ -4,8 +4,6 @@ import Profile from "./Profile";
 import Contacts from "./Contacts";
 import Projects from "./Projects";
 import Technology from "./Technology";
-import downBtn from "../assets/angle-double-down-solid.svg";
-import upBtn from "../assets/angle-double-up-solid.svg";
 import "../index.css";
 
 const Home = () => {
@@ -15,19 +13,24 @@ const Home = () => {
   const contactsRef = useRef();
   const homeRef = useRef();
 
-  const handleProfileClick = () => {
+  const handleProfileClick = (e) => {
+    e.preventDefault();
     profileRef.current.scrollIntoView({ behavior: "smooth" });
   };
-  const handleProjectsClick = () => {
+  const handleProjectsClick = (e) => {
+    e.preventDefault();
     projectsRef.current.scrollIntoView({ behavior: "smooth" });
   };
-  const handleTechnologyClick = () => {
+  const handleTechnologyClick = (e) => {
+    e.preventDefault();
     technologyRef.current.scrollIntoView({ behavior: "smooth" });
   };
-  const handleContactsClick = () => {
+  const handleContactsClick = (e) => {
+    e.preventDefault();
     contactsRef.current.scrollIntoView({ behavior: "smooth" });
   };
-  const handleHomeClick = () => {
+  const handleHomeClick = (e) => {
+    e.preventDefault();
     homeRef.current.scrollIntoView({ behavior: "smooth" });
   };
 
@@ -35,54 +38,14 @@ const Home = () => {
     <>
       <div className="main-container">
         <div className="main-container-logo" ref={homeRef}>
-          <Logo />
-          <div className="scroll-to-btn-container">
-            <button
-              onClick={handleProfileClick}
-              style={{
-                cursor: "pointer",
-                padding: "0",
-                border: "none",
-                background: "none",
-              }}
-            >
-              <img
-                src={downBtn}
-                alt="down arrow"
-                style={{
-                  width: "40px",
-                  height: "40px",
-                }}
-              />
-            </button>
-          </div>
+          <Logo handleProfileClick={handleProfileClick} />
         </div>
         <div className="main-container-profile" ref={profileRef}>
-          <Profile />
-          <div className="scroll-to-btn-container">
-            <button
-              onClick={handleProjectsClick}
-              style={{
-                cursor: "pointer",
-                padding: "0",
-                border: "none",
-                background: "none",
-              }}
-            >
-              <img
-                src={downBtn}
-                alt="down arrow"
-                style={{
-                  width: "40px",
-                  height: "40px",
-                }}
-              />
-            </button>
-          </div>
+          <Profile handleProjectsClick={handleProjectsClick} />
         </div>
         <div className="main-container-projects" ref={projectsRef}>
-          <Projects />
-          <div className="scroll-to-btn-container">
+          <Projects handleTechnologyClick={handleTechnologyClick} />
+          {/* <div className="scroll-to-technology-container">
             <button
               onClick={handleTechnologyClick}
               style={{
@@ -101,11 +64,11 @@ const Home = () => {
                 }}
               />
             </button>
-          </div>
+          </div> */}
         </div>
         <div className="main-container-technology" ref={technologyRef}>
-          <Technology />
-          <div className="scroll-to-btn-container">
+          <Technology handleContactsClick={handleContactsClick} />
+          {/* <div className="scroll-to-contacts-container">
             <button
               onClick={handleContactsClick}
               style={{
@@ -124,11 +87,11 @@ const Home = () => {
                 }}
               />
             </button>
-          </div>
+          </div> */}
         </div>
         <div className="main-container-contacts" ref={contactsRef}>
-          <Contacts />
-          <div className="scroll-to-btn-container">
+          <Contacts handleHomeClick={handleHomeClick} />
+          {/* <div className="scroll-to-btn-container">
             <button
               onClick={handleHomeClick}
               style={{
@@ -147,7 +110,7 @@ const Home = () => {
                 }}
               />
             </button>
-          </div>
+          </div> */}
         </div>
       </div>
     </>

@@ -4,6 +4,10 @@
   background: #48e5c2;
 }
 
+body {
+  text-rendering: optimizeLegibility;
+}
+
 a {
   text-decoration: none;
   color: #fcfaf9;
@@ -30,10 +34,33 @@ a {
   }
 }
 
-.scroll-to-btn-container {
+.scroll-to-profile-container {
   display: flex;
   justify-content: center;
-  margin-top: 38vh;
+  margin-top: 39vh;
+  /* position: relative;
+  top: 0px; */
+  animation: blinker 2s linear infinite;
+}
+
+.scroll-to-projects-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 39vh;
+  animation: blinker 2s linear infinite;
+}
+
+.scroll-to-technology-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 39vh;
+  animation: blinker 2s linear infinite;
+}
+
+.scroll-to-contacts-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 39vh;
   animation: blinker 2s linear infinite;
 }
 
@@ -43,13 +70,16 @@ a {
   }
 }
 
-.main-container-profile {
+.main-container-profile,
+.main-container-projects,
+.main-container-technology,
+.main-container-contacts {
   min-height: 100%;
-  padding: 0vh 0vh 0vh 5vh;
+  padding: 0vh 5vh 0vh 5vh;
   animation: fade 0.9s ease-in;
 }
 
-.main-container-projects {
+/* .main-container-projects {
   min-height: 100%;
   padding: 0vh 0vh 0vh 5vh;
   animation: fade 0.9s ease-in;
@@ -65,7 +95,7 @@ a {
   min-height: 100%;
   padding: 0vh 0vh 0vh 5vh;
   animation: fade 0.9s ease-in;
-}
+} */
 
 .logo-container,
 .period {
@@ -82,6 +112,8 @@ a {
 }
 
 .profile-container {
+  display: flex;
+  justify-content: center;
   width: 100%;
   font-family: "Dosis", sans-serif;
   font-weight: 700;
@@ -160,4 +192,15 @@ a {
   display: flex;
   align-items: flex-end;
   margin-left: 5px;
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.dgrant {
+  display: flex;
+  justify-content: center;
 }

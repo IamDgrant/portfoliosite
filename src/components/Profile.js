@@ -1,8 +1,9 @@
 import React from "react";
+import downBtn from "../assets/angle-double-down-solid.svg";
 import cogs from "../assets/cogs-solid.svg";
 import headphones from "../assets/headphones-alt-solid.svg";
 
-const Profile = () => {
+const Profile = ({ handleProjectsClick }) => {
   return (
     <div className="profile-container">
       <div className="title-container">about me</div>
@@ -27,6 +28,26 @@ const Profile = () => {
             />
           </div>
         </div>
+      </div>
+      <div className="scroll-to-profile-container">
+        <button
+          onClick={handleProjectsClick}
+          style={{
+            cursor: "pointer",
+            padding: "0",
+            border: "none",
+            background: "none",
+          }}
+        >
+          <img
+            src={downBtn}
+            alt="down arrow"
+            style={{
+              width: "40px",
+              height: "40px",
+            }}
+          />
+        </button>
       </div>
     </div>
   );
