@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  background: #48e5c2;
+}
+
+a {
+  text-decoration: none;
+  color: #fcfaf9;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  /* background: #48e5c2; */
+}
+
+.main-container-profile {
+  margin: 7vh 0vh 0vh 5vh;
+  animation: fade 0.9s ease-in;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+}
+
+.profile-container {
+  width: 100%;
+  font-family: "Quicksand", sans-serif;
+  color: #fcfaf9;
+}
+
+.profile-title-container {
+  width: 100%;
+  font-size: 5vh;
+  font-weight: 700;
+}
+
+.profile-about-container {
+  width: 100%;
+  font-size: 3vh;
+  font-weight: 700;
+}
+
+.profile-links-container {
+  width: 100%;
+  display: flex;
+  font-size: 3vh;
+  font-weight: 700;
+}
+
+.linkedin-highlight {
+  background: url(./assets/brush-stroke-banner-5.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 95%;
+  background-position: 0px 0px;
+  color: #f3d3bd;
+  margin-left: 0.75vh;
+  margin-right: 0.75vh;
+  padding: 0px 0px 0px 0px;
+}
+
+.github-highlight {
+  background: url(./assets/brush-stroke-banner-5.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 95%;
+  background-position: 0px 0px;
+  color: #f3d3bd;
+  margin-left: 0.75vh;
+  margin-right: 0.75vh;
+  padding: 0px 0px 0px 0px;
+}
+
+.about-sd,
+.about-mp {
+  display: flex;
+}
+
+.cogs,
+.headphones {
+  margin-left: 5px;
+  /* margin-top: 2px; */
+}
