@@ -17,9 +17,12 @@ a {
   /* background: #48e5c2; */
 }
 
-.main-container-profile {
-  margin: 7vh 0vh 0vh 5vh;
-  animation: fade 0.9s ease-in;
+.main-container-logo {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  padding-top: 30vh;
+  animation: fade 1.25s ease-in;
 }
 
 @keyframes fade {
@@ -28,9 +31,35 @@ a {
   }
 }
 
+.scroll-to-btn {
+    display: flex;
+  justify-content: center;
+}
+
+.main-container-profile {
+  min-height: 100%;
+  padding: 7vh 0vh 0vh 5vh;
+  animation: fade 0.9s ease-in;
+}
+
+.logo-container,
+.period {
+  display: flex;
+  justify-content: center;
+}
+
+.dgrant {
+  white-space: nowrap;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  font-size: 20vh;
+  color: #fcfaf9;
+}
+
 .profile-container {
   width: 100%;
   font-family: "Quicksand", sans-serif;
+  font-weight: 700;
   color: #fcfaf9;
 }
 
