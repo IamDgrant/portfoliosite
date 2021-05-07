@@ -5,6 +5,7 @@ import headphones from "../assets/headphones-alt-solid.svg";
 const Profile = () => {
   return (
     <div className="profile-container">
+      <div className="title-container">about me</div>
       <div className="profile-about-container">
         <div className="about-sd">
           <div>i am a Software Engineer</div>

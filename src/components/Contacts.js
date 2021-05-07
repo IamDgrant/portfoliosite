@@ -3,6 +3,7 @@ import React from "react";
 const Contact = () => {
   return (
     <>
+    <div className="title-container">contact</div>
       <div className="profile-links-container">
         i am on{" "}
         <div className="linkedin-highlight">
