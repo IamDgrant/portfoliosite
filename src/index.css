@@ -46,7 +46,25 @@ a {
 
 .main-container-profile {
   min-height: 100%;
-  padding: 7vh 0vh 0vh 5vh;
+  padding: 0vh 0vh 0vh 5vh;
+  animation: fade 0.9s ease-in;
+}
+
+.main-container-projects {
+  min-height: 100%;
+  padding: 0vh 0vh 0vh 5vh;
+  animation: fade 0.9s ease-in;
+}
+
+.main-container-technology {
+  min-height: 100%;
+  padding: 0vh 0vh 0vh 5vh;
+  animation: fade 0.9s ease-in;
+}
+
+.main-container-contacts {
+  min-height: 100%;
+  padding: 0vh 0vh 0vh 5vh;
   animation: fade 0.9s ease-in;
 }
 
@@ -58,7 +76,7 @@ a {
 
 .dgrant {
   white-space: nowrap;
-  font-family: "Quicksand", sans-serif;
+  font-family: "Dosis", sans-serif;
   font-weight: 700;
   font-size: 20vh;
   color: #fcfaf9;
@@ -66,14 +84,21 @@ a {
 
 .profile-container {
   width: 100%;
-  font-family: "Quicksand", sans-serif;
+  font-family: "Dosis", sans-serif;
   font-weight: 700;
   color: #fcfaf9;
 }
 
-.profile-title-container {
+.about-sd {
   width: 100%;
-  font-size: 5vh;
+  font-size: 3.5vh;
+  font-weight: 700;
+}
+
+.about-mp {
+  justify-content: flex-end;
+  width: 100%;
+  font-size: 3.5vh;
   font-weight: 700;
 }
 
