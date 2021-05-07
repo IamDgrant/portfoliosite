@@ -31,9 +31,17 @@ a {
   }
 }
 
-.scroll-to-btn {
-    display: flex;
+.scroll-to-btn-container {
+  display: flex;
   justify-content: center;
+  margin-top: 38vh;
+  animation: blinker 2s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
 }
 
 .main-container-profile {
